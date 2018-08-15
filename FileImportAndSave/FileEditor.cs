@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FileImportAndSave
 {
-	public partial class Form1 : Form
+	public partial class FileEditor : Form
 	{
-		public Form1()
+		public FileEditor()
 		{
 			InitializeComponent();
+		}
+
+		private void btnImport_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
