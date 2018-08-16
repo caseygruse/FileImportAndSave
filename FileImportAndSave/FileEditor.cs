@@ -72,7 +72,22 @@ namespace FileImportAndSave
 
 		private void btnEncrypt_Click(object sender, EventArgs e)
 		{
-			//var hash = new SHA1Managed
+			StringBuilder data = new StringBuilder();
+			data.AppendLine(rtbFileContents.Text);
+			string fileContents = data.ToString();
+			rtbFileContents.Clear();
+
+			rtbFileContents.Text = RijndaelSimple.Encrypt(fileContents, "passphrase", "salty", "SHA1", 2, "thismustbesixtee", 256);
+			
+			
+		}
+
+		private void btnDecrypt_Click(object sender, EventArgs e)
+		{
+			string encryptedText = rtbFileContents.Text.ToString();
+			rtbFileContents.Clear();
+
+			rtbFileContents.Text = RijndaelSimple.Decrypt(encryptedText, "passphrase", "salty", "SHA1", 2, "thismustbesixtee", 256);
 		}
 	}
 }

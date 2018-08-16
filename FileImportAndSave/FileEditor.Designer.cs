@@ -81,6 +81,7 @@
 			this.btnDecrypt.TabIndex = 4;
 			this.btnDecrypt.Text = "Decrypt";
 			this.btnDecrypt.UseVisualStyleBackColor = true;
+			this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
 			// 
 			// FileEditor
 			// 
