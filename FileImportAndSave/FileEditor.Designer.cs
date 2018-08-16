@@ -53,6 +53,7 @@
 			this.btnSave.TabIndex = 1;
 			this.btnSave.Text = "Save File";
 			this.btnSave.UseVisualStyleBackColor = true;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// rtbFileContents
 			// 
@@ -70,6 +71,7 @@
 			this.btnEncrypt.TabIndex = 3;
 			this.btnEncrypt.Text = "Encrypt";
 			this.btnEncrypt.UseVisualStyleBackColor = true;
+			this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
 			// 
 			// btnDecrypt
 			// 
