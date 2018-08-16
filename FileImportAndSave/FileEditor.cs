@@ -72,7 +72,7 @@ namespace FileImportAndSave
 
 		private void btnEncrypt_Click(object sender, EventArgs e)
 		{
-			var hash = new SHA1Managed
+			//var hash = new SHA1Managed
 		}
 	}
 }
